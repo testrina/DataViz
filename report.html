@@ -23,8 +23,9 @@
 			<h3>Overall Analysis Questions</h3>
 			<ol>
 				<li>Does the ownership of the buildings affect their affordability?</li>
-				<li>Does the flip term/no-lip status of a property significantly increase its value?</li>
-				<li>Do prices increase due to the increasing “luxury status” of the properties?</li>
+				<li>Does the flip term/non-flip status of a property affect its value?</li>
+				<li>Do larger flip terms allow for properties to gain value?</li>
+				<li>Is the flipped-property market activly hurting the affordability of housing?</li>
 				<li>...</li>
 			</ol>
 		</section>
@@ -35,83 +36,197 @@
 			<figure>
 				<img src="sales by zip.PNG" alt="" />
 				<figcaption>
-					As I was initally exploring the dataset, I discovered a couple quirks. For example, while most of the 
-					buildings sold are in the city of Boston proper, there a couple from the zip code 02190, which is the 
-					town of Weymouth, Massachusetts. In the map above you can clearly see it's distant placement from the 
-					rest of the city, which would have implications on many of the properties' attributes. Although the 
-					datapoints with this zip code were not many, I made an effort to exclude
-					then from the rest of the vizualizations so as not to skew the data.
+					As I was initially exploring the dataset, I discovered a couple quirks. For example, while most of the
+                    buildings sold are in the city of Boston proper, there a couple from the zip code 02190, which is the
+                    town of Weymouth, Massachusetts. In the map above, which visualizes the number of data points per zip code to ground the viewer a bit in the data itself,
+                    the you can clearly see it's distant placement from the
+                    rest of the city, which would have implications on many of the properties' attributes. Although the
+                    datapoints with this zip code were not many, I made an effort to exclude
+                    then from the rest of the visualizations so as not to skew the data. 
+					In addition, the data is skewed significantly to the downtown area of Boston, with areas beyond south 
+					Boston and Brookline significantly underrepresented. Properties sold in the downtown area numbere 2000-12000 
+					per zip code, whereas most of the fringe areas number less than 30 properties sold per zip code.
+                </figcaption>
+			</figure>
+
+			<figure>
+				<img src="pie buyer.PNG" alt="" />
+				<figcaption>
+					Diving right into it, I decided to get to the bottom of my first line of inquiry, which was whether the type of buyer of the property affects the price of the real estate. First I wanted to know the ratios of properties bought by larger investors to the smaller ones in order to see what the demographics of the buyers were. Looking at this pie chart, which shows the types of buyers from across the years, it seems the overwhelming majority of the properties were bought by non-investors, and only 1,187 of the properties were bought by institutional buyers.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Test Print_Page_01.jpg" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					This graph, which represents the median price of the properties purchased over
+					time but categorizes them by buyer type (institutions, small, non-investor, etc). Although initially I attempted to use average price, I quickly realized that due to the
+					wide range of prices was being skewed, so the median provides the most reliable figure in this situation. Although based on the data shown in the graph the
+					prices per property have unsurprisingly risen for all the buyer types over time, we can see a very significant increase in large investor property prices and huge
+					spikes after 2013, and especially in 2016 and 2021 in the prices of properties purchased by institutional investors. This is because larger and institutional investors are able to afford much more expensive properties to begin with, and thus this particular data is not surprising.	
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="prop time investor type.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					This next chart follows the number of properties purchased over time, categorized by the type of buyer. While we can predictably see that the non-investors still make up the majority of the purchases across the two decades, however the distribution of these sales gives a bit more insight on the buying patterns of these properties. The activity of non-investor purchases can be easily traced back to world events of the time. For example the peak in 2004-2006 aligned really well with the housing bubble that then ended in a recession in 2008. Similarly, the dip of sales in 2020 aligns with the COVID pandemic, where everyone began to move away from the big cities including Boston. What’s interesting is that the other types of investors stayed relatively unaffected by the dips and spikes in the non-investor purchasing. Instead, the numbers of these buyers steadily increased over time.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="property price buyers.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					Without a doubt property prices have been rising over time in Boston, and this chart confirms this is the case, as median prices rise over time. It seems there is a clear trend, where in the early 2000s, prices across the investor types were very similar, yet over time the other investor types’ median prices pulled away from the non-investor type.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="building types.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					Following up on the rising prices, I was curious to know if these price increases were due to the properties being larger or more expensive typologies. In this chart, we can see the different building types that were purchased categorized by the investor types. This chart actually indicates that the properties purchased are pretty proportional across the investor types. 
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="year bedrooms.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					A really interesting discovery is when I mapped the average number of bedrooms per category, I discovered that actually the institutional properties had by far the least average number of bedrooms per property when compared to the other investor types. 
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Amenities.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					I was interested to see how the amenities compared as well. It was a bit difficult to sort the amenities by typology due to the combined letters, but this chart emerged. Due to the fact that 28,000 properties can have air conditioning as their only amenity, this category was hidden in order for the other amenities to be visible. In addition amenities included in less than 3 properties were hidden. What is interesting that can be gathered from this chart, is that although the investor distribution is largely consistent across the various amenities, the inclusion of an attic seems to be included in significantly fewer non-investor properties compared to the other investor types.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img s rc="non private buyers.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					As in the data there were sine parameters listing if a buyer was an LLC, governmental organization, bank, and so on, I decided to see if these made up a significant percentage of the sales. After having generated this chart, it is clear that these groups of buyers only made up at most, less than ¼ of the total buyers in any given year, although there is a visible trend in the increase of such buyers over the years. While trusts and LLCs make up the majority of the purchases, businesses and banks also make a number of purchases every year, although their participation in the market seems to largely be concentrated in the 2006 to 2012 timeframe when the market itself was not doing as well. 
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="buyers and sellers by count.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					Another thing that I became curious about was if the seller and buyer types generally align to one another (for example the seller and the buyer are both non-investors, or both institutional). Thus I created this slightly more complex chart that shows both the sellers and the buyers by color, with each general color categorizing the buyer type and the subsequent strata representing the sellers. As is visible here, the majority of properties bought by non investors were sold by non investors, and a similar correlation was found in nearly all the categories. However, there is a slightly different story for small investor buyers, who bought properties sold by non-investors nearly as frequently as from other small investors.
 				</figcaption>
 			</figure>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="prop time investor type non investor only.PNG" alt="" />
 				<figcaption>
-				ENTER IMAGE CAPTION HERE.
+					In this chart, I filtered out the other seller types to represent only properties sold by non investors. As can be seen clearly, there is a not insignificant number of properties sold by non-investors being purchased by small investors. Based on my explorations of flip terms for each buyer type, it is my understanding that a non-investor would be a private family that is planning on residing at the property rather than flipping it or using its income otherwise. Thus, the properties that are bought from non-investors by small investors might pose a bit of a concern.
 				</figcaption>
 			</figure>
+
+			<figure>
+				<img src="price diff non and small investors.PNG" alt="" />
+				<figcaption>
+					When we delve deeper into these two buyer types, we can see some interesting trends. This chart plots the median price differences between transactions for properties sold by non-investors - specifically examining the properties that were then purchased by non-investors and small investors. Although in the early 2000s, the non-investor buyers were getting a better profit margin, as we continue to the present the narrative flips and the small investors are able to make better margins. This means that properties that are bought from non-investors by small investors become less affordable at the next sale, inflating prices of previously more affordable properties.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img src="price diff by investor.PNG" alt="" />
+				<figcaption>
+					This chart examines the changes in median percentage change between sales for the different investor types. This chart does not show the institutional category because the data from the institutional investors was very sporadic and exponentially larger than the other investor types. Looking at this chart, we can see that the non-investor properties are the most steady and consistent, although lower than the other investor types for the most part. Meanwhile the large investors have the biggest giants but also the biggest losses depending on the year and experience the most sporadic changes over time.
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="flip terms total.PNG" alt="" />
+				<figcaption>
+					For me it was important to understand what these different buyers and seller types are interested in, what they are purchasing properties for. The article I read in relation to the ‘housing the rich’ topic discussed that the increasing ‘flipped’ market is really skyrocketing prices, and I wanted to understand who is flipping these properties and how much of an increase of value are they able to achieve. To my surprise, the majority of the properties purchased across the survey were not flipped, with only a small percentage 
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="flip term investors.PNG" alt="" />
+				<figcaption>
+					In order to figure out who is flipping these properties, I created this chart, comparing the flip terms per buyer category. Surprisingly to me, the majority of all of the flipped properties were sold by non-investors. While the long term category has by far the most properties and the most non-investor properties, the other categories have a more similar number of sales. Another interesting thing to note, is that properties sold by those in the medium investor typology onwards are still bought by non-investors but at much lower rates compared to the small and non-investor categories.
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="map of count by flip term.PNG" alt="" />
+				<figcaption>
+					This map, indicating what investor types are selling in the various locations across the city, indicated that the majority of the non-investors are actually selling within the city itself, with other zipcodes in the surrounding areas dropping in number of sales but also largely the other investor types.
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="map of sales by flip term.PNG" alt="" />
+				<figcaption>
+					The next step for me was to figure out where these flips are taking place. This map examines the average prices per property sorted by the flip term. Based on this map visualization, the properties outside of the downtown core are non-flip, and the majority of the flip properties are within the downtown area. Predictably, the properties in the downtown area had much higher prices, but unpredictably the prices of the flipped properties were not always higher than the non-flip properties. 
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="flip horizon over time.PNG" alt="" />
+				<figcaption>
+					This graph looks at the flip horizons for the various investor types over time. It seems that although there is a clear upward trend in flip horizon, the non-investors are not only the most speedy to increase but also largely have the highest flip horizon as well.
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="price diff by term.PNG" alt="" />
+				<figcaption>
+					This chart explores the relationship between the median price differences between the flips and the flip terms. It seems like although previous to 2010 flipped properties had on average much larger percentages than the non-flip properties, after this point the non-flip option became much more profitable. This is very interesting when one considers that in order to flip a property one has to invest some money into it to begin with.
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="price diff by seller.PNG" alt="" />
+				<figcaption>
+					This graph does a similar thing to the previous one except looking at the relationship between the price differences and investor types over time. It seems the return for everyone peaked around 2016 before starting a second incline during the 2020 pandemic onwards. Interestingly, the Institutional investors have the lowest median percentage difference, sometimes even in the negatives. On the other hand the non-investors have the most consistently high curve in recent years.
+					</figcaption>
+			</figure>
+
+			<figure>
+				<img src="year built count.PNG" alt="" />
+				<figcaption>
+					I was curious to see if the flips were largely being performed on older buildings or if these are more recently constructed properties. This graph indicates the number of properties by year built and sorted by flip term (excluding the non-flip properties which outnumber the flipped ones by a significant margin). It seems that the most frequently flipped properties were built in the late 1800s and early 1900s, which makes a lot of sense as these are the buildings that need the most maintenance and potentially updating of critical utilities. However, what was slightly shocking to see  was the peak of buildings built in the early 2000s that were flipped.
+				</figcaption>
+			</figure>
+
+			
+
 		</section>
 
 		<section>
 			<h2>Summary</h2>
 
-			<p>WRITE FINAL SUMMARY HERE.</p>
+			<p>Overall I made the following observations:<br><br>
+				<ol>
+				<li>The overwhelming majority of properties were purchased by non-investors, indicating a significant presence of private individuals or families in the housing market. Institutional buyers constituted a minor fraction of purchases. However these larger investors dominate the market financially, purchasing and selling much more expensive properties than the non-investors.
+				</li><li>Property prices have exhibited a clear upward trend over time, with median prices rising consistently. However, there is a divergence in median prices among different investor types, with non-investors initially having similar prices in the early 2000s but eventually being outpaced by other investor categories.
+				</li><li>The distribution of property types purchased across investor categories remains relatively proportional, indicating not only diverse investment portfolios among buyers but also no particular lean towards one typology by each investment type
+				</li><li>There is a significant correlation between seller and buyer types, with properties predominantly bought by non-investors being sold by non-investors as well. However, properties sold by non-investors are also frequently purchased by small investors.
+				</li><li>The analysis of property flips reveals that a considerable portion of flipped properties were initially sold by non-investors
+				</li><li>Geographically, non-investor sales are concentrated within the city itself, particularly in the downtown area, while other investor types exhibit different sales patterns. 
+				</li><li>The downtown area emerges as a hotspot for property flips, with higher average prices for flipped properties compared to non-flipped ones. However, flipped properties do not always command higher prices, indicating nuanced market dynamics.
+				</li><li>Property flipping is prevalent in older buildings, particularly those built in the late 1800s and early 1900s, but there is also a surprising peak in flipping activities involving properties built in the early 2000s.
+					<li>...</li>
+				</ol>
+			<br><Br><br>
+				I was also able to answer some questions: <br><br>
+				Does the ownership of the buildings affect their affordability?<br><br>
+				The ownership of buildings does not directly determine affordability. However, the analysis reveals that investors tend towards purchasing from their own investment category, so a non-investor would find it challenging to afford an institutionally sold property but less so for a property sold by another non-investor.
+				<br><br><br>
+				Does the flip term/non-flip status of a property affect its value?<br><br>
+				The flip term/non-flip status of a property does affect its value, but the relationship is nuanced. While the downtown area emerges as a hotspot for property flips, with higher average prices for flipped properties compared to non-flipped ones, flipped properties do not always command higher prices. This indicates that while property flipping may contribute to value appreciation in certain cases, other factors such as property condition, location, and market dynamics also play crucial roles in determining property value.
+				<br><br><br>
+				
+				Do larger flip terms allow for properties to gain value?<br><br>
+				The longer term flips are more frequent, especially in the older buildings and they were able to increase their prices more than the short- and medium-term flips. However, they do not gain value more rapidly than the non-flipped properties. 
+				<br><br><br>
+				Is the flipped-property market actively hurting the affordability of housing?<br><br>
+				Flipped properties do not always command higher prices. This suggests that while property flipping may contribute to value appreciation in certain cases, its overall impact on housing affordability is nuanced and may depend on various factors such as market dynamics, property conditions, and location. Further research specifically focused on the relationship between property flipping and housing affordability would be necessary to draw definitive conclusions.
+				</p>
 		</section>
 	</main>
 </body>
